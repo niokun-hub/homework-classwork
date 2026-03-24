@@ -12,4 +12,15 @@ def get_mask_account(account_number: str) -> str:
     return f"**{last_digits}"
 
 
+if __name__ == "__main__":
+    print("ТЕСТИРОВАНИЕ ФУНКЦИЙ МАСКИРОВКИ")
 
+    print("\n1. МАСКИРОВКА КАРТЫ")
+    card_number = "7000792289606361"
+    print(f"Входной номер: {card_number}")
+    print(f"Результат:     {get_mask_card_number(card_number)}")
+
+    print("\n2. МАСКИРОВКА СЧЕТА")
+    account_number = "73654108430135874305"
+    print(f"Входной номер: {account_number}")
+    print(f"Результат:     {get_mask_account(account_number)}")
